@@ -5,9 +5,6 @@ A sleek set of retro icons for MacOS
 
 #
 
-
-&nbsp;
-
 Proceed with caution! Changing icons of MacOS requires certain system restrictions to be disabled.
 
 We begin by disabling System Integrity Protection, which enables mac system icons to be changed.
