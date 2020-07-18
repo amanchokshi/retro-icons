@@ -153,9 +153,9 @@ and replace `App-empty.icns`
 Now, our custom calender icon will update everyday to show the date, in our custom `retro` style.
 
 ### Bonus Tips
-Modify these icons and make your own!
+Modify these icons and make them your own!
 
-This repository contains my intermediate vector files which I used to create these icons. These can serve as the base for modifications, or as an inspiration
+This repository contains the intermediate vector files which I used to create these icons. These can serve as the base for modifications, or as an inspiration
 to create something new and awesome. `retro-icons/templates/palette.ai` is an Adobe Illustrator file which contains the color palette which I used for these
 icons and well as a template for the icon shape.
 
