@@ -23,10 +23,86 @@ sudo mount -uw /
 killall Finder
 ```
 
-Once you have completed changing all the icons, remember to re-enable System Inegrity Protection, by rebooting your mac
+After changing all the icons, remember to re-enable System Inegrity Protection, by rebooting your mac
 
 ```
 csrutil enable
 ```
 
-![Retro Apps](docs/apps.png)
+This is what your launchpad will look like once all the icons have been replaced
+
+![Retro Launchpad](docs/launchpad.png)
+
+
+### Download Instructions
+
+Download the icons with the following [link](https://github.com/amanchokshi/retro-icons/archive/master.zip), or clone this repository
+
+```
+git clone https://github.com/amanchokshi/retro-icons.git
+
+tree retro-icons -d
+
+retro-icons
+├── docs
+├── icns
+├── original
+├── scripts
+└── templates
+    ├── pngs
+    └── svgs
+
+
+cd retro-icons
+```
+
+MacOS uses icon files in the `.icns` format. All icons available with this icon packs are available in the `retro-icons/icns` folder.
+The `original` folder contains system icons, in case you want to revert to the back to the default icons. `templates` contains
+`svg` and `png` files which can be used as templates to modify icons to your taste. It also contains `palette.ai` an Adobe Illustrator
+file with a color palette and an icon shape template. The `scripts` folder contains `python` scripts used to convert `svg` file to `pngs`
+and `icns`.
+
+### Application Icons
+
+Changing application icons is an quick process. Open your `Applications` folder. Right click on an app you want to modify and select `get info`
+
+
+<p float="left">
+  <img src="docs/options.png"/>
+  <img src="docs/info.png"/>
+</p>
+
+The icon outlined in orange is the one which needs to be replaced. Open the `retro-icons/icns` folder, find the matching icon, and drag in over
+the orange box until a green ⊕ symbol appears. You may need to enter your password to finalise the change of the icon.
+
+This method will work for most apps. Some system icons such and the `finder`, `calendar` & the `trash can` will require more love.
+
+The icons in the dock may not immediately reflect the changes you've made. To refresh the dock, open a terminal `Utilities > Terminal`
+and enter
+
+```
+killall Dock
+```
+
+
+#### Ooops, I want the original icons back
+In the unlikely scenario where you'd like to revert to the original icon, right click on the icon and get info. Select the icon as
+outlined in the figure above, and hit `delete` on your keyboard. This will delete the custom icon, revealing the original icon
+
+
+### System Icons
+
+These icons can be more stubborn and will require more attention
+
+##### Finder & Trash
+The finder and trash icons live deep within the bowels of the operating system. They can be accessed with the following incantation in a terminal
+
+```
+open /System/Library/CoreServices/Dock.app/Contents/Resources/
+```
+
+Or, open the Finder and enter `⌘ + ⇧ + G` or `command+shift+G` to bring up the Go To Folder prompt where the following path may be entered
+
+```
+/System/Library/CoreServices/Dock.app/Contents/Resources/
+```
