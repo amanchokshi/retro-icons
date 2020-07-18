@@ -2,7 +2,7 @@
 
 ![Retro Dock](docs/dock.png)
 
-Transform your mac with this custom set of *retro icons*
+Transform your mac with a custom set of ***retro icons***
 
 Changing icons of MacOS requires certain system restrictions to be disables. Proceed with caution!
 
@@ -106,3 +106,49 @@ Or, open the Finder and enter `⌘ + ⇧ + G` or `command+shift+G` to bring up t
 ```
 /System/Library/CoreServices/Dock.app/Contents/Resources/
 ```
+
+The following files will need to be replaced
+
+```
+.
+├── finder.png
+├─── finder@2.png
+├── trashempty.png
+├── trashempty.png
+├── trashempty2.png
+├── trashempty2@2.png
+├── trashempty@2.png
+├── trashfull.png
+├── trashfull2.png
+├── trashfull2@2.png
+└── trashfull@2.png
+```
+
+Custom versions of thes icons can be found in `retro-icons/icns/Finder` & `retro-icons/icns/Trash`. Drag and drop them into the `Resources` folder,
+making sure to check `replace` files in a prompt pops up. You may need to enter a password before this can be completed. If at a later stage,
+you'd like to revert to the original icons, follow the above steps, but use the original icons which I've provided in the `retro-icons/original` folder.
+
+##### Folder & Drives
+
+Replacing the default icons of the MacOS folders, Hard Drives & SD cards requires a process similar to that described above.
+The system icons live in one of the following  three folders. Open them with the terminal using the `open` command, or use
+`⌘ + ⇧ + G` in the finder.
+
+
+```
+/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/
+/System/Library/Extensions/IOStorageFamily.kext/Contents/Resources/
+/System/Library/Extensions/IOSCSIArchitectureModelFamily.kext/Contents/Resources
+```
+
+The custom icons live in `retro-icons/Folder` & `retro-icons/Drives`. You can drag and drop them over the system icon, select `replace` and
+enter your password to replace the icon.
+
+##### Calander Icon
+
+The calendar icon is particularly problamatic, since it is dynamic, and changes every day to display the current date. To change the icon,
+right click on the `calender.app` and select `show package contents`. Navigate to `Contents > Resources`. Find `App-empty.icns` and `App.icns`
+and replace them with corresponding icons found in `retro-icons/icns`. Navigate further to `Calendar.docktileplugin > Contents > Resources`
+and replace `App-empty.icns`
+
+Now, our custom calender icon will update everyday to show the date, in our custom `retro` style.
