@@ -1,5 +1,6 @@
 A sleek set of retro icons for MacOS
 -------------------------------------
+&nbsp;
 ![Retro Dock](docs/retro-icons.gif)
 
 #
