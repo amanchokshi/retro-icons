@@ -199,4 +199,13 @@ python png2icns.py --help
 python png2icns.py --png_dir=./svgs --out_dir=./icns
 ```
 
+### Contributing
 
+I'm a bit OCD and couldn't stop making icons until I had replaced all my icons. These icons were made to suit my needs, which may leave
+you a couple of apps short of a full set, with no suitable beautiful `retro-icon` to replace. I undertand your plight!
+Open an issue on this github page with the icon you're missing and I'm happy to make you a super cool icon ✨🌙✨
+
+I'd love to see new icons you come up with and make them a part of this repository. Submit a pull request and I'm happy
+to add your icons to this repository, as long as they match the aesthetic style!
+
+You can also email me at [Aman Chokshi](mailto:achokshi@student.unimelb.edu.au?subject=[GitHub]%20Retro%20Icons)
