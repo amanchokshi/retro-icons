@@ -5,11 +5,9 @@ A sleek set of retro icons for MacOS
 
 #
 
-Proceed with caution! Changing icons of MacOS requires certain system restrictions to be disabled.
-
-We begin by disabling System Integrity Protection, which enables mac system icons to be changed.
-
-Reboot your mac into recovery mode by holding down `⌘R` while the system is being rebooted. Enter your system password and then select `Utilities > Terminal`
+Proceed with caution! Changing icons of MacOS requires certain system restrictions to be disabled. We begin by disabling 
+System Integrity Protection, which enables mac system icons to be changed. Reboot your mac into recovery mode by holding 
+down `⌘R` while the system is being rebooted. Enter your system password and then select `Utilities > Terminal`
 
 ```
 csrutil disable
