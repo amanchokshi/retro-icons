@@ -152,3 +152,51 @@ and replace them with corresponding icons found in `retro-icons/icns`. Navigate 
 and replace `App-empty.icns`
 
 Now, our custom calender icon will update everyday to show the date, in our custom `retro` style.
+
+### Bonus Tips
+Modify these icons and make your own!
+
+This repository contains my intermediate vector files which I used to create these icons. These can serve as the base for modifications, or as an inspiration
+to create something new and awesome. `retro-icons/templates/palette.ai` is an Adobe Illustrator file which contains the color palette which I used for these
+icons and well as a template for the icon shape.
+
+`retro-icons/tempates` contains `svgs` and `pngs` folders. The svgs folder has vector graphics for each of the icons. These can be opened
+in Illustrator to modify the design and colors. The pngs folder contains pngs of my custom `folder` icons. You can use Photoshop to modify their colors and design.
+
+#### Creating icns files
+
+The `retro-icons/scripts` folder contains `python` scripts which can convert `.svg` & `.png` files in MacOs `.icns` icon files.
+
+svg files are converted to png files using inkscape, which can be installed with
+
+```
+brew cask install inkscape
+```
+
+The `svg2png.py` script converts a batch of pngs in a `--svg_dir` folder to pngs which will be saved to an output folder specified using
+the `--out_dir` flag.
+
+Note: these scripts require python versions above 3.6
+```
+# See all options with
+
+python svg2png.py --help
+
+# Example
+python svg2png.py --svg_dir=./svgs --out_dir=./pngs
+```
+
+The above code will convert all svg files in the `./svg` folder to png files which will be saved to `./pngs`
+
+Similary, the `png2icns.py` will convert a set of png file to mac icns files
+
+```
+# See all options with
+
+python png2icns.py --help
+
+# Example
+python png2icns.py --png_dir=./svgs --out_dir=./icns
+```
+
+
