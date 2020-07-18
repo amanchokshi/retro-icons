@@ -1,10 +1,15 @@
 # retro-icons
+*A sleek set of custom retro icons*
 
-![Retro Dock](docs/dock.png)
+-----------------------------------
+![Retro Dock](docs/retro-icons.gif)
 
-Transform your mac with a custom set of ***retro icons***
+-----------------------------------
 
-Changing icons of MacOS requires certain system restrictions to be disables. Proceed with caution!
+
+&nbsp;
+
+Proceed with caution! Changing icons of MacOS requires certain system restrictions to be disabled.
 
 We begin by disabling System Integrity Protection, which enables mac system icons to be changed.
 
