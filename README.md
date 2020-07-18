@@ -1,10 +1,8 @@
-# retro-icons
-*A sleek set of custom retro icons*
-
------------------------------------
+A sleek set of retro icons for MacOS
+-------------------------------------
 ![Retro Dock](docs/retro-icons.gif)
 
------------------------------------
+-------------------------------------
 
 
 &nbsp;
