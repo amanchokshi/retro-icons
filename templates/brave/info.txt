@@ -1,0 +1,1 @@
+This directory contains favicons from my brave browser bookmarks custom favicons using the Favicon Changer Extension.
